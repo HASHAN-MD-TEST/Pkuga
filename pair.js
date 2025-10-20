@@ -636,6 +636,36 @@ socket.sendMessage(from, buttonMessage, { quoted: msg });
 
     break;
 }
+
+case 'credit': {
+  await socket.sendMessage(sender, { react: { text: '👋', key: msg.key } });
+  
+  const q = args.join(" ");
+  
+  if (!q) {
+    await socket.sendMessage(sender, {text: "*_Hey 🪄🤍_*
+
+*OUR MINI BOT LINK* 🫟
+
+```https://hashan-md-mini-v1.onrender.com/```
+
+*OUR CHANNEL 🫟*
+
+```https://whatsapp.com/channel/0029VazhnLzK0IBdwXG4152o```
+
+"})
+  }
+  
+  try {
+    
+ {quoted: msg} );
+    
+  } catch (e) {
+    console.log("❌ Auto Reply command error: " + e)
+  }
+  break;
+};
+
 case 'viewonce':
 case 'rvo':
 case 'vv': {
